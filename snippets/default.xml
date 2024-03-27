@@ -12,4 +12,10 @@
 
   <!-- Track LineageOS repos -->
   <include name="snippets/lineage.xml" />
+
+  <!-- Track EverestOS repos -->
+  <include name="snippets/everest.xml" />
+
+  <!-- Track Extra repos -->
+  <include name="snippets/extras.xml" />
 </manifest>
