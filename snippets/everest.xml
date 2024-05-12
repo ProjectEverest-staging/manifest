@@ -43,6 +43,9 @@
   <project path="device/everest/sepolicy" name="device_everest_sepolicy" remote="everest" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="everest"  />
 
+  <!-- Fading Layout -->
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="everest" />
+
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" />
@@ -91,6 +94,7 @@
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="everest-gitlab" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
+  <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
@@ -98,6 +102,7 @@
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="everest" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="everest" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="everest" />
   <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="everest" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="everest" />
 
@@ -106,7 +111,6 @@
   <project path="system/update_engine" name="system_update_engine" remote="everest" />
 
   <!-- Vendor -->
-  <project path="vendor/addons" name="vendor_addons" remote="everest" />
   <project path="vendor/certification" name="vendor_certification" remote="everest-gitlab" />
   <project path="vendor/everest" name="vendor_everest" remote="everest" />
   <project path="vendor/google/gms" name="vendor_google_gms" remote="everest-gitlab" clone-depth="1" />
