@@ -17,7 +17,4 @@
   <!-- Prebuilts repos -->
   <project path="prebuilts/custom-sdk" name="prebuilts_custom-sdk" remote="parasite" />
   <project path="prebuilts/tools-parasite" name="prebuilts_tools-parasite" remote="parasite" />
-
-  <!-- General repos -->
-  <project path="vendor/google/interfaces" name="vendor_google_interfaces" remote="parasite" />
 </manifest>
