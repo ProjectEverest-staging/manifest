@@ -30,19 +30,30 @@ $(call inherit-product, vendor/everest/config/common_full_phone.mk)
 # Build Flags
 ```
 # Maintainer name for Everest
+
 EVEREST_MAINTAINER := "XYZ"
 
 # Adding Blur support
+
 TARGET_SUPPORTS_BLUR := true
 
 # For UDFPS devices
-EVEREST_UDFPS_ANIMATIONS := true
+
+TARGET_HAS_UDFPS := true
+
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Build GAPPS
+
 WITH_GAPPS := true
 
 # Build Vanilla
+
 WITH_GAPPS := false
+
+# Build Launcher3 in GAPPS (default is Pixel Launcher)
+
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
 ```
 
 # Build
