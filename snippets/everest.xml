@@ -53,7 +53,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="stg" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="stg" revision="qpr2-pfw" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="everest" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="everest" />
 
@@ -100,7 +100,7 @@
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="stg" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="stg" revision="qpr2-pfw" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="everest" />
@@ -117,7 +117,8 @@
 
   <!-- Vendor -->
   <project path="vendor/certification" name="vendor_certification" remote="everest-gitlab" />
-  <project path="vendor/everest" name="vendor_everest" remote="stg" />
+  <project path="vendor/everest" name="vendor_everest" remote="stg" revision="qpr2-pfw" />
   <project path="vendor/google/gms" name="vendor_google_gms" remote="everest-gitlab" clone-depth="1" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="stg" revision="qpr2" />
   <project path="vendor/support" name="vendor_support" remote="everest" />
 </manifest>
