@@ -19,5 +19,6 @@
   <project path="prebuilts/tools-parasite" name="prebuilts_tools-parasite" remote="parasite" />
 
   <!-- General repos -->
+  <project path="vendor/certification" name="vendor_certification" remote="parasite-gitlab" />
   <project path="vendor/google/interfaces" name="vendor_google_interfaces" remote="parasite" />
 </manifest>
