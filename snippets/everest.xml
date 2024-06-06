@@ -15,6 +15,11 @@
            fetch="https://gitlab.com/everestos/"
            revision="qpr2" />
 
+  <!-- GitHub (EverestOS-staging) -->
+  <remote  name="stg"
+           fetch="https://github.com/ProjectEverest-staging/"
+           revision="qpr2" />
+
   <!-- Rootdir -->
   <project path="manifest" name="manifest" remote="everest" />
   <project path="art" name="art" groups="pdk" remote="everest" />
