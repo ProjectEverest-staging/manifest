@@ -100,7 +100,7 @@
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="stg" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="everest" />
