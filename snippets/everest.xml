@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Github -->
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <!-- GitHub (EverestOS) -->
+  <remote  name="everest"
+           fetch="https://github.com/ProjectEverest/"
+           revision="qpr3" />
+
+  <!-- Gitlab (EverestOS) -->
+  <remote  name="everest-gitlab"
+           fetch="https://gitlab.com/everestos/"
+           revision="qpr3" />
+
+  <!-- Gitea (EverestOS) -->
+  <remote  name="everest-gitea"
+           fetch="https://gitea.com/ProjectEverest/"
+           revision="qpr3" />
+
+  <!-- Rootdir -->
+  <project path="manifest" name="manifest" remote="everest" />
+  <project path="everest-maintainers" name="everest-maintainers" remote="everest" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="everest" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk" remote="everest" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="everest" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/everest/sepolicy" name="device_everest_sepolicy" remote="everest" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="everest"  />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+
+  <!-- Hardware -->
+  <project path="hardware/everest/interfaces" name="hardware_everest_interfaces" remote="everest" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="everest" >
+    <!-- Add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- Add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+  </project>
+
+  <!-- Packages -->
+  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" />
+  <project path="packages/apps/EverestWallpaperStub" name="packages_apps_EverestWallpaperStub" remote="everest" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
+  <project path="packages/apps/PocketMode" name="packages_apps_PocketMode" remote="everest" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
+  <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="everest" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="everest" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="everest" />
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="everest" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="everest" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="everest" />
+
+  <!-- Vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="everest-gitlab" />
+  <project path="vendor/everest" name="vendor_everest" remote="everest" />
+  <project path="vendor/PixelPropsUtils" name="vendor_PixelPropsUtils" remote="everest" />
+  <project path="vendor/gms" name="vendor_gms" remote="everest-gitea" clone-depth="1" />
+  <project path="vendor/support" name="vendor_support" remote="everest" />
+</manifest>
