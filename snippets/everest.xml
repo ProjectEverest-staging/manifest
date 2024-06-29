@@ -49,6 +49,7 @@
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="everest" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="everest" />
 
   <!-- Hardware -->
@@ -91,6 +92,7 @@
   <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" />
   <project path="packages/apps/EverestWallpaperStub" name="packages_apps_EverestWallpaperStub" remote="everest" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/PocketMode" name="packages_apps_PocketMode" remote="everest" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
