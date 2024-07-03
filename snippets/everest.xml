@@ -46,6 +46,9 @@
   <project path="device/everest/sepolicy" name="device_everest_sepolicy" remote="everest" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="everest"  />
 
+  <!-- Fading Layout -->
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="everest" />
+
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" />
@@ -93,6 +96,7 @@
   <project path="packages/apps/EverestWallpaperStub" name="packages_apps_EverestWallpaperStub" remote="everest" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
+  <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
   <project path="packages/apps/PocketMode" name="packages_apps_PocketMode" remote="everest" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
