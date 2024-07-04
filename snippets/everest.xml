@@ -112,6 +112,7 @@
 
   <!-- Vendor -->
   <project path="vendor/everest" name="vendor_everest" remote="everest" />
+  <project path="vendor/lawnchair" name="vendor_lawnchair" remote="everest" />
   <project path="vendor/PixelPropsUtils" name="vendor_PixelPropsUtils" remote="everest" />
   <project path="vendor/gms" name="vendor_gms" remote="everest-gitea" clone-depth="1" />
   <project path="vendor/support" name="vendor_support" remote="everest" />
