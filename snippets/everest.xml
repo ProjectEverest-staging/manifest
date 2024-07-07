@@ -20,6 +20,11 @@
            fetch="https://gitea.com/ProjectEverest/"
            revision="qpr3" />
 
+  <!-- GitHub (EverestOS-staging) -->
+  <remote  name="stg"
+           fetch="https://github.com/ProjectEverest-staging/"
+           revision="sdk" />
+
   <!-- Rootdir -->
   <project path="manifest" name="manifest" remote="everest" />
   <project path="everest-maintainers" name="everest-maintainers" remote="everest" />
