@@ -57,12 +57,14 @@
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="parasite" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="parasite" />
   <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" remote="parasite" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="parasite" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="parasite" />
 
   <!-- System repos -->
   <project path="system/bpf" name="system_bpf" remote="parasite" />
   <project path="system/extras" name="system_extras" remote="parasite" />
   <project path="system/keymaster" name="system_keymaster" remote="parasite" />
+  <project path="system/core" name="system_core" remote="parasite" />
   <project path="system/libhidl" name="system_libhidl" remote="parasite" />
   <project path="system/libziparchive" name="system_libziparchive" remote="parasite" />
   <project path="system/logging" name="system_logging" remote="parasite" />

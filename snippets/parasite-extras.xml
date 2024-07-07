@@ -24,4 +24,7 @@
 
   <!-- vendor repos -->
   <project path="vendor/certification" name="vendor_certification" remote="parasite-gitlab" />
+  <project path="vendor/google/dexopt_profiles" name="vendor_google_dexopt_profiles" remote="parasite-gitlab" />
+  <project path="vendor/google/mainline_modules" name="vendor_google_mainline_modules" remote="parasite" />
+  <project path="vendor/parasite/prebuilts" name="vendor_parasite_prebuilts" remote="parasite" />
 </manifest>
