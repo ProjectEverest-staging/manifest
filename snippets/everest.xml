@@ -97,14 +97,14 @@
   </project>
 
   <!-- Packages -->
-  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" />
+  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="stg" />
   <project path="packages/apps/EverestWallpaperStub" name="packages_apps_EverestWallpaperStub" remote="everest" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
   <project path="packages/apps/Pif" name="packages_apps_Pif" remote="everest" />
   <project path="packages/apps/PocketMode" name="packages_apps_PocketMode" remote="everest" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="stg" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="everest" />
